@@ -7,8 +7,8 @@ class InputTracker:
     def ask(self, prompt_text):
         try:
             awnser = input(prompt_text)
-            self.history.append
-            return awnswer
+            self.history.append(awnser)
+            return awnser
 
         except KeyboardInterrupt:
             print("Dont interrupt the keyboard by Crtl + C!")
