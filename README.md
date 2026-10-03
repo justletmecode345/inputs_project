@@ -1,4 +1,4 @@
-# inputs-tracker
+# inputs_tracker project
 
 A clean Python tool to check multiple console text inputs instantly without messy daisy chains.
 
