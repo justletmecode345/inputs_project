@@ -7,7 +7,7 @@ A clean Python tool to check multiple console text inputs instantly without mess
 * **No Responsibility:** This code comes as-is. If you use it and your code breaks, that is on you.
 * **No Feature Requests:** I will NOT be implementing extra features (like integer support or auto-casting). The framework is strictly for text.
 * **Tweakers Welcome:** If you want new features, tweak the code and add them yourself!
-* * **Legal Notice (Philippines):** This source code is an original creation protected under Republic Act No. 8293 (Intellectual Property Code of the Philippines). It is distributed globally under the standard MIT License conditions.
+* **Legal Notice (Philippines):** This source code is an original creation protected under Republic Act No. 8293 (Intellectual Property Code of the Philippines). It is distributed globally under the standard MIT License conditions.
 
 
 ## How to use it
