@@ -1,4 +1,4 @@
-# inputs_tracker project
+# inputs_helper project
 
 A clean Python tool to check multiple console text inputs instantly without messy daisy chains.
 
@@ -14,6 +14,7 @@ A clean Python tool to check multiple console text inputs instantly without mess
 ## This is for the "input_all.py" file
 ```python
 # Copy the class code into your project
+# or save a file named "inputs_helper.py" to do an import statement of "import inputs_helper"
 inputs = InputTracker()
 
 inputs.ask("To test, say 'abort' and on the next one too: ")
