@@ -15,7 +15,7 @@ A clean Python tool to check multiple console text inputs instantly without mess
 ```python
 # Copy the class code into your project
 # or save a file named "inputs_helper.py" to do an import statement of "import inputs_helper"
-inputs = InputTracker()
+inputs = InputTracker() # only if you paste the inputs_helper.py file code on top
 
 inputs.ask("To test, say 'abort' and on the next one too: ")
 inputs.ask("To test, say 'abort' again: ")
