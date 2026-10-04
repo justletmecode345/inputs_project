@@ -1,4 +1,4 @@
-# This file is for the specific command "inputs.all" and "inputs.any"
+# This file is for the specific command "inputs.all", "inputs.any", and "inputs.ask" as your generic input statement
 class InputTracker:
     def __init__(self):
         self.history = []
