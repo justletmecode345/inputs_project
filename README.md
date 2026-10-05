@@ -11,18 +11,27 @@ A clean Python tool to check multiple console text inputs instantly without mess
 
 
 ## How to use it
-## This is for the "input_all.py" file
+## This is for the "input_tracker.py" file
 ```python
-# Copy the class code into your project
-# or save a file named "inputs_helper.py" to do an import statement of "import inputs_helper"
-inputs = InputTracker() # only if you paste the inputs_helper.py file code on top
+# Name a file called "input_tracker"
+import input_tracker
 
-inputs.ask("To test, say 'abort' and on the next one too: ")
-inputs.ask("To test, say 'abort' again: ")
+inputs = inputs_helper.InputTracker()
 
-if inputs.all == "abort":
-  print("aborting...")
-  exit()
 
-else:
-  print("test failed due to not saying 'abort'")
+while True:
+    user_word = inputs.ask("Enter a word: ")
+    
+    
+    if user_word.lower() == "exit":
+        print("Turning off...")
+        break
+    
+   
+    if inputs.any in ['programming', 'coding', 'hardware']:
+        print('these make computers work! (used to test if code works)')
+        
+    
+    else:
+        print(f"'{user_word}' is nice, but it doesn't make computers work.")
+        
