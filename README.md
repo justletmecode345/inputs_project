@@ -2,12 +2,18 @@
 
 A clean Python tool to check multiple console text inputs instantly without messy daisy chains.
 
-## Read This Before Using (Project Rules)
+## Read This Before Using (Project Rules and application of inputs.any)
+* **inputs.any:** inputs.any detects if an input matches a string in a list.
 * **Completely Free:** You can copy, change, or use this code anywhere for free.
 * **No Responsibility:** This code comes as-is. If you use it and your code breaks, that is on you.
-* **No Feature Requests:** I will NOT be implementing extra features (like integer support or auto-casting). The framework is strictly for text.
+* **No Feature Requests:** I will NOT be implementing extra features (like mathematical integer and float support or auto-casting). The framework is strictly for text.
 * **Tweakers Welcome:** If you want new features, tweak the code and add them yourself!
 * **Legal Notice (Philippines):** This source code is an original creation protected under Republic Act No. 8293 (Intellectual Property Code of the Philippines). It is distributed globally under the standard MIT License conditions.
+
+* **Tip:** Integers and float is technically supported but treated as strings.
+* **Here are 2 examples of the tip:**
+* if input.any in ['1', '2', '3']:
+* if input.all == '1':
 
 
 ## How to use it
