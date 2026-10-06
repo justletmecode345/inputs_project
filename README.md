@@ -21,11 +21,13 @@ inputs = inputs_helper.InputTracker()
 
 while True:
     user_word = inputs.ask("Enter a word: ")
+    user_word2 = inputs.ask("And another one: ")
     
     
-    if user_word.lower() == "exit":
-        print("Turning off...")
+    if input.all == "exit":
+        print("turning off...")
         break
+        
     
    
     if inputs.any in ['programming', 'coding', 'hardware']:
