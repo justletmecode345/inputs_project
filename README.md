@@ -30,7 +30,7 @@ while True:
         
     
    
-    if inputs.any in ['programming', 'coding', 'hardware']:
+    elif inputs.any in ['programming', 'coding', 'hardware']:
         print('these make computers work! (used to test if code works)')
         
     
