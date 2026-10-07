@@ -31,14 +31,14 @@ while True:
     
     
     if inputs.all == "exit":
-        print("turning off...")
+        print("\nturning off...")
         break
         
     
    
     elif inputs.any in ['programming', 'coding', 'hardware']:
-        print('these make computers work! (used to test if code works)')
+        print('\nthese make computers work! (used to test if code works)')
         
     
     else:
-        print(f"'{user_word}' is cool but doesn't make computers work.")
+        print(f"'\n{user_word}' is cool but doesn't make computers work.")
