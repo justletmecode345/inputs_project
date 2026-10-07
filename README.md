@@ -19,8 +19,8 @@ A clean Python tool to check multiple console text inputs instantly without mess
 ## How to use it
 ## This is for the "input_tracker.py" file
 ```python
-# Name a file called "input_tracker"
-import input_tracker
+# Name a file called "input_helper"
+import input_helper
 
 inputs = inputs_helper.InputTracker()
 
