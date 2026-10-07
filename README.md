@@ -30,7 +30,7 @@ while True:
     user_word2 = inputs.ask("And another one: ")
     
     
-    if input.all == "exit":
+    if inputs.all == "exit":
         print("turning off...")
         break
         
@@ -41,5 +41,4 @@ while True:
         
     
     else:
-        print(f"'{user_word}' is nice, but it doesn't make computers work.")
-        
+        print(f"'{user_word}' is cool but doesn't make computers work.")

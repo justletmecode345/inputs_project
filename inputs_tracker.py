@@ -1,4 +1,18 @@
 # This file is for the specific statements "inputs.all", "inputs.any", and "inputs.ask" as your generic input statement
+class _InputMatcher:
+    def __init__(self, history, match_all):
+        self.history = history
+        self.match_all = match_all
+
+    def __eq__(self, value):
+        if not self.history:
+            return False
+
+        if self.match_all:
+            return all(answer == value for answer in self.history)
+        return any(answer == value for answer in self.history)
+
+
 class InputTracker:
     def __init__(self):
         self.history = []
@@ -13,21 +27,10 @@ class InputTracker:
         except KeyboardInterrupt:
             print("Dont interrupt the keyboard by Crtl + C!")
 
-        @property
-        def all(self):
-            if not self.history:
-                return False
+    @property
+    def all(self):
+        return _InputMatcher(self.history, match_all=True)
 
-            first_input = self.history[0]
-
-            for item in self.history:
-                if item != first_input:
-                    return False
-
-        return first_input
-
-        @property
-        def any(self):
-            if not self.history:
-                return False
-            return self.history[-1]
+    @property
+    def any(self):
+        return _InputMatcher(self.history, match_all=False)
