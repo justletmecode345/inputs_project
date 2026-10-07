@@ -1,3 +1,4 @@
+# Make a file named inputs_tracker.py inside the smae folder
 import inputs_tracker
 inputs = inputs_tracker.InputTracker()
 
