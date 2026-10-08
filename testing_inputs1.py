@@ -15,3 +15,5 @@ while True:
 
     else:
         print("\nInputs received")
+
+    inputs.reset()
