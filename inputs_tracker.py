@@ -26,11 +26,18 @@ class InputTracker:
 
         except KeyboardInterrupt:
             print("Dont interrupt the keyboard by Crtl + C!")
+            return None
 
+    def reset(self):
+        self.history.clear()
+    
     @property
     def all(self):
         return _InputMatcher(self.history, match_all=True)
 
+    @property
+    def any(self):
+        return _InputMatcher(self.history, match_all=False)
     @property
     def any(self):
         return _InputMatcher(self.history, match_all=False)
