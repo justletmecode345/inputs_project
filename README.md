@@ -44,3 +44,5 @@ while True:
     
     else:
         print(f"'\n{user_word}' is cool but doesn't make computers work.")
+
+    inputs.reset()
