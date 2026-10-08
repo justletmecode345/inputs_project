@@ -1,4 +1,4 @@
-# smart_inputs project
+# smartInputs project
 
 A clean Python tool to check multiple console text inputs instantly without messy daisy chains.
 
