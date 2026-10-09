@@ -1,4 +1,4 @@
-# This file is for the specific statements "inputs.all", "inputs.any", and "inputs.ask" as your generic input statement
+# Tracks input history for `inputs.ask()`, `inputs.all`, and `inputs.any`.
 class _InputMatcher:
     def __init__(self, history, match_all):
         self.history = history
@@ -12,11 +12,9 @@ class _InputMatcher:
             return all(answer == value for answer in self.history)
         return any(answer == value for answer in self.history)
 
-
 class InputsTracker:
     def __init__(self):
         self.history = []
-
 
     def ask(self, prompt_text):
         try:
