@@ -13,7 +13,7 @@ class _InputMatcher:
         return any(answer == value for answer in self.history)
 
 
-class InputTracker:
+class InputsTracker:
     def __init__(self):
         self.history = []
 
