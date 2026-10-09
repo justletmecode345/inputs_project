@@ -1,6 +1,6 @@
 # Make a file named inputs_tracker.py inside the same folder
 import inputs_tracker
-inputs = inputs_tracker.InputTracker()
+inputs = inputs_tracker.InputsTracker()
 
 while True:
     a = inputs.ask("testing: ")
