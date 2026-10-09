@@ -38,6 +38,7 @@ class InputTracker:
     @property
     def any(self):
         return _InputMatcher(self.history, match_all=False)
+    
     @property
     def any(self):
         return _InputMatcher(self.history, match_all=False)
