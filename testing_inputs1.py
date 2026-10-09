@@ -2,7 +2,7 @@ from inputs_tracker import InputsTracker
 
 
 def test_input_tracker():
-    inputs = InputTracker()
+    inputs = InputsTracker()
 
     inputs.history = ["test", "test", "test"]
     assert inputs.all == "test"
