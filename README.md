@@ -21,10 +21,10 @@ if inputs.all == '1':
 ## This is for the "inputs_tracker.py" file
 ```python
 # Name a file called "inputs_tracker" in the same folder, then copy file content from inputs_tracker.py from here
-# or use this as a template
+# or use this as a template/codespace
 import inputs_tracker
 
-inputs = inputs_tracker.InputTracker()
+inputs = inputs_tracker.InputsTracker()
 
 
 while True:
