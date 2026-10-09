@@ -1,4 +1,4 @@
-from inputs_tracker import InputTracker
+from inputs_tracker import InputsTracker
 
 
 def test_input_tracker():
