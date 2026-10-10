@@ -1,4 +1,4 @@
-# .lower() version of "inputs_tracker.py"
+# Tracks input history for `inputs.ask()`, `inputs.all`, and `inputs.any`.
 class _InputMatcher:
     def __init__(self, history, match_all):
         self.history = history
@@ -8,9 +8,11 @@ class _InputMatcher:
         if not self.history:
             return False
 
+        value = value.strip()
+
         if self.match_all:
-            return all(answer.lower() == value.lower() for answer in self.history)
-        return any(answer.lower() == value.lower() for answer in self.history)
+            return all(answer.strip() == value for answer in self.history)
+        return any(answer.strip() == value for answer in self.history)
 
 class InputsTracker:
     def __init__(self):
@@ -28,7 +30,7 @@ class InputsTracker:
 
     def reset(self):
         self.history.clear()
-
+    
     @property
     def all(self):
         return _InputMatcher(self.history, match_all=True)
@@ -36,7 +38,3 @@ class InputsTracker:
     @property
     def any(self):
         return _InputMatcher(self.history, match_all=False)
-
-        if self.match_all:
-            return all(answer.lower() == value.lower() for answer in self.history)
-        return any(answer.lower() == value.lower() for answer in self.history)
